@@ -28,6 +28,8 @@ let mapleader = "\<Space>"
 
 set showcmd
 set nu
+set completeopt=menu,menuone,noselect
+setlocal omnifunc=lsp#complete
 
 nnoremap <Leader>f :Files<CR>
 nnoremap <Leader>g :Rg<CR>
