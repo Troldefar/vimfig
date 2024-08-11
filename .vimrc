@@ -39,4 +39,4 @@ nnoremap <Leader>f :Files<CR>
 nnoremap <Leader>g :Rg<CR>
 set guifont=FiraCode\ Nerd\ Font:h12
 set termguicolors
-colorscheme catppuccin_macchiato
+colorscheme catppuccin_mocha
