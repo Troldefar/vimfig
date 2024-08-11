@@ -33,3 +33,4 @@ setlocal omnifunc=lsp#complete
 
 nnoremap <Leader>f :Files<CR>
 nnoremap <Leader>g :Rg<CR>
+set guifont=FiraCode\ Nerd\ Font:h12
