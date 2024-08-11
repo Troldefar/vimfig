@@ -6,6 +6,8 @@ Plug 'junegunn/fzf.vim'
 Plug 'prabirshrestha/vim-lsp'
 Plug 'mattn/vim-lsp-settings'
 
+Plug 'catppuccin/vim', { 'as': 'catppuccin' }
+
 call plug#end()
 
 let g:lsp_settings = {
@@ -34,3 +36,5 @@ setlocal omnifunc=lsp#complete
 nnoremap <Leader>f :Files<CR>
 nnoremap <Leader>g :Rg<CR>
 set guifont=FiraCode\ Nerd\ Font:h12
+set termguicolors
+colorscheme catppuccin_macchiato
