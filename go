@@ -1,5 +1,7 @@
 #!/bin/bash
 
+rm ~/.vimrc && mv .vimrc ~/ 
+
 gsettings set org.gnome.desktop.interface monospace-font-name 'FiraCode Nerd Font 12'
 
 # Setup std lsps
