@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# Use vin plug
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+
 rm ~/.vimrc && mv .vimrc ~/ 
 
 gsettings set org.gnome.desktop.interface monospace-font-name 'FiraCode Nerd Font 12'
@@ -36,3 +41,5 @@ echo "Please manually set your terminal font to '$FONT_NAME' to fully enjoy Nerd
 echo "You can do this by opening your terminal's settings and selecting '$FONT_NAME' as the font."
 
 echo "Setup complete! Nerd Font installed and configured for Vim."
+
+echo "Remember to :PlugInstall in order to dl the fancy colors for your fav term"
