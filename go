@@ -4,7 +4,12 @@
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
-rm ~/.vimrc && mv .vimrc ~/ 
+if [ -f "~/.vimrc" ]
+then
+	rm ~/.vimrc
+fi
+
+mv .vimrc ~/ 
 
 gsettings set org.gnome.desktop.interface monospace-font-name 'FiraCode Nerd Font 12'
 
