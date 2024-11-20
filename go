@@ -6,7 +6,8 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 
 if [ -f "~/.vimrc" ]
 then
-	rm ~/.vimrc
+	echo "I see you already have a vimrc file, i just mv'ed it a little to ~/.vimrcbackup
+	mv ~/.vimrc ~/.vimrcbackup
 fi
 
 mv .vimrc ~/ 
